@@ -11,90 +11,180 @@
 		<!-- googlefont -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Oswald&display=swap" rel="stylesheet">
 
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<!-- External CSS -->
 		<link rel="stylesheet" type="text/css" href="./style.css">
 	</head>
 	<body>
 		<!-- navbar -->
-		<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-		  <a class="navbar-brand" href="#landing">PORTFOLIO</a>
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+		  <a class="navbar-brand" href="#landing">
+		  		<img src="images/user.png" width="36">
+		  </a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
 		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 		    <div class="navbar-nav ml-auto">
 		      <a class="nav-link active" href="#landing">Home <span class="sr-only">(current)</span></a>
-		      <a class="nav-link" href="#projects">Projects</a>
-		      <a class="nav-link" href="#tools">Tools</a>
-		      <a class="nav-link" href="#contacts">Contact</a>
+		      <a class="nav-link" href="#my-projects">Projects</a>
+		      <a class="nav-link" href="#tools-title">Tools</a>
+		      <a class="nav-link" href="#contact">Contact</a>
 		    </div>
 		  </div>
 		</nav>
 		<!-- end of navbar -->
 		<!-- Landing -->
-		<div class="container-fluid text-center px-0 " id="landing">
-			<div class="row justify-content-center align-items-center py-4 mt-5" >
-				<div class="d-flex">
-					<img src="images/profile.jpeg" width="250" class="img-fluid rounded-circle ">
+		<div class="container-fluid min-vh-100 d-flex mt-5" id="landing">
+			<div class="row d-flex justify-content-center pb-5 mt-5 align-items-center" data-aos="fade-down">
+				<div class="d-none col-6 order-md-1 d-lg-flex col-md-4 bg-none" >
+					<img src="images/profile.jpeg" class="img-fluid rounded-circle">
 				</div>
-				<div class="text-white">
-					<h2>DARWIN REBANAL</h2>
-					<h3>Full-stack Web Developer</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. </p>
+				<div class="text-white col-md-5 text-md-left text-center order-md-2 d-block col-8 mx-md-2">
+					<h3 class="mb-2 text-warning">Hello! I'm</h3>
+					<h1 class="mb-3mt-3">DARWIN REBANAL</h1>
+					<h3 class="mb-4 text-warning">Full-stack Web Developer</h3>
+					<p>A results-driven professional, seeking to use proven knowledge of web developing to deliver coding excellence and innovation with the ability to follow industry and technological trends, and facilitating early adoptation of innovations.</p>
 
 				</div>
 			</div>
 		</div>
-		<!-- maps and contact -->
-		<div class="container">
-			<div class="row">
-				    <div class="col-md-6 my-4">
-				        <h4 class="text-center my-4">Visit Us</h4>
-				        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3865.964335224767!2d121.10245181264857!3d14.313504460569698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d9a2c100ff29%3A0xdd4591d2efaa4ea4!2sPolytechnic%20University%20of%20the%20Philippines%2C%20Santa%20Rosa%20Campus!5e0!3m2!1sen!2sph!4v1673936272937!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				    </div>
-				    <div class="col-md-6 my-4">
-				        <h4 class="text-center my-4">Message Us</h4>
-				        <form>
-				            <div class="form-group">
-				                <label>Full Name</label>
-				                <input type="text" class="form-control">
-				            </div>
-				            <div class="form-group">
-				                <label>Email Address</label>
-				                <input type="email" class="form-control">
-				            </div>
-				            <div class="form-group">
-				                <label>Message</label>
-				                <textarea class="form-control"></textarea>
-				            </div>
-				            <button type="submit" class="btn btn-outline-danger btn-block">Send</button>
-				        </form>
-				    </div>
+		<!-- End of Landing -->
+		<!-- projects -->
+		<div id="my-projects" class="container-fluid mt-5 mb-5">
+			<div class="min-vh-100 mt-5 text-center">
+				<h2 class="mb-5 font-weight-bold text-center" id="project-title">My Projects</h2>
+				<!-- project containers start -->
+				<div id="project-sample" class="container d-block d-md-flex justify-content-center">
+					<!-- HTML Card start -->
+					<div class="card d-block bg-white shadow col-md-4 mb-5 mx-md-3 mb-md-0 p-0" style="width: 18rem;" data-aos="fade-up">
+					  <img src="images/ecommerce.png" class="card-img-top" alt="...">
+					  <div class="card-body mt-3">
+					    <h5 class="card-title">E-commerce website</h5>
+					    <p class="card-text text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						</p>
+					  </div>
+					</div>
+					<!-- HTML Card end -->
+					<!-- Bootstrap Card start -->
+					<div class="card d-block bg-white shadow col-md-4 mb-5 mx-md-3 mb-md-0 p-0" style="width: 18rem;" data-aos="fade-up">
+					  <img src="images/blog.jpg" class="card-img-top" alt="...">
+					  <div class="card-body mt-3">
+					    <h5 class="card-title">Blog Website and Application</h5>
+					    <p class="card-text text-left">A blog website is a site that is updated with new information on an ongoing basis and normally consists of a collection of posts. The main purpose of blogs is to convey information in a way that is more informal or conversational than other long-form written content.</p>
+					  </div>
+					</div>
+					<!-- Bootstrap Card end -->
+					  
+					    <!-- Project Management dashboard -->
+					<div class="card d-block bg-white shadow col-md-4 mb-5 mx-md-3 mb-md-0 p-0" style="width: 18rem;" data-aos="fade-up">
+					  <img src="images/pmd.png" class="card-img-top img-fluid" alt="...">
+					  <div class="card-body mt-3">
+					    <h5 class="card-title">Project Management dashboard</h5>
+					    <p class="card-text text-left">A project management dashboard is a data dashboard that displays key performance indicators pertaining to specific projects. A project management dashboard can display metrics for a project's overall performance and progress, or highlight particular problems that require further attention. This type of dashboard is ideal for individual departments that want to monitor the success of projects and campaigns.</p>
+					  </div>
+					</div>
+					<!-- end of Project Management dashboard -->
 				</div>
 			</div>
+		</div>
+		<!-- End of projects -->
+		<!-- tools -->
+		<div id="tools-title" class="container text-center shadow p-5  mb-5" data-aos="zoom-in">
+            <h1 class="mb-5 font-weight-bold text-dark" >Tools I Use</h1>
+            <div class="d-flex d-md-block justify-content-center">
+                <div class="d-md-block d-flex flex-column">
+                    <img class=" m-1 rounded" width="80" src="images/logo-html5.png"/>
+				    <img class=" m-1 rounded" width="80" src="images/logo-css3.png"/>
+				    <img class=" m-1 rounded" width="80" src="images/logo-javascript.png"/>
+				    <img class=" m-1 rounded" width="80" src="images/logo-git.png"/>
+				    <img class=" m-1 rounded" width="80" src="images/logo-sublime-text-3.png"/>
+				    <img class=" m-1 rounded" width="80" src="images/logo-gitlab-ci-cd.png"/>
+                </div>
+                <div class="mt-3 d-md-block d-flex flex-column">
+				    <img class=" m-1 rounded" width="80" src="images/logo-expressjs.png"/>
+				    <img class=" m-1 rounded" width="80" src="images/logo-react.png"/>
+				    <img class=" m-1 rounded" width="80" src="images/logo-heroku.png"/>
+				    <img class=" m-1 rounded" width="80" src="images/logo-mongodb.png"/>
+				    <img class=" m-1 rounded" width="80" src="images/logo-nodejs.png"/>
+					<img class=" m-1 rounded" width="80" src="images/logo-postman.png"/>
+                </div>
+            </div>
+        </div>
+        <!-- end of tools -->
+        <!-- contact -->
+        <div id="contact" class="container-fluid text-center pt-5">
+        	<h2 class="text-center text-warning">Contact</h2>
+
+			<div class="row p-3 d-flex justify-content-center min-vh-100">
+				<div class="col-md-6">
+				    <h4 class="text-center my-4 text-light">Visit Us</h4>
+				    <iframe id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3865.9643347544707!2d121.10449031380563!3d14.313504487887432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d9a2c100ff29%3A0xdd4591d2efaa4ea4!2sPolytechnic%20University%20of%20the%20Philippines%2C%20Santa%20Rosa%20Campus!5e0!3m2!1sen!2sph!4v1673977825488!5m2!1sen!2sph" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+				</div>
+				<div class="col-md-6">
+					<form>
+						<h4 class="text-center my-4 text-light">Message Us</h4>
+					  	<div class="form-group">
+						    <label class="text-light" for="full_name">Full Name</label>
+						    <input type="text" class="form-control" id="full_name" placeholder="Your Name">
+						 </div>
+			            <div class="form-group">
+						    <label class="text-light" for="email">Email address</label>
+						    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+						 </div>
+			            <div class="form-group">
+						    <label class="text-light" for="number">Contact Number</label>
+						    <input type="text" class="form-control" id="number" placeholder="+639123456789">
+						 </div>
+			            <div class="form-group">
+						    <label class="text-light" for="subject">Subject</label>
+						    <input type="text" class="form-control" id="subject" placeholder="Subject">
+						 </div>
+			            <div class="form-group">
+						    <label class="text-light" for="message">Message</label>
+						    <textarea class="form-control" id="message" rows="7"></textarea>
+						 </div>
+					  <!-- Button trigger modal -->
+					  <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">
+					    Send Email
+					  </button>
+					</form>
+				</div>
+			</div>
+		</div>	
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Thank you for contacting us!</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        Message Successfully Sent!
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        
+		      </div>
+		    </div>
+		  </div>
+		</div>
 
 		<!-- bootstrap script -->
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		  <script>
+		    AOS.init();
+		  </script>
 	</body>
 </html>
 
-<!-- <div class="row bg-secondary justify-content-center align-items-center py-4 py-lg-5" id="landing">
-                <div class="col-10 col-md-3 p-3 py-lg-5">
-                    <img src="https://www.biography.com/.image/t_share/MTE5NDg0MDU0ODg4ODA5OTk5/charles-babbage-wc-9193834-1-402.jpg" class="rounded-circle border border-dark img-fluid">
-                </div>
-                <div class="col-md-7 col-lg-5 text-white pl-md-5 py-lg-5">
-                    <h1 class="mt-2 text-center text-md-left" id="myName">Charles Babbage</h1>
-                    <h3 class="my-3 text-center text-md-left" id="myTitle">Full Stack Web Developer</h3>
-                    <p class="text-justify">
-                        Charles Babbage KH FRS (/ˈbæbɪdʒ/; 26 December 1791 – 18 October 1871) was an English polymath. A mathematician, philosopher, inventor and mechanical engineer, Babbage originated the concept of a digital programmable computer.
-
-                        Babbage is considered by some to be "father of the computer".
-                    </p>
-                </div>
-            </div> -->
