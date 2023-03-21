@@ -7,14 +7,83 @@
 }
 
 body{
-	background-color: #F7F9FF;
+	background-color: #072039;
 }
 
-.navbar, #contact{
-	background-color: rgb(6,60,118);
+.navbar{
+	background-color: #073462;
 }
-.photo{
-  background-image: linear-gradient(rgba(214, 150, 40, 1), rgba(255, 237, 203, 0.7));
+
+.navbar-brand{
+  position: relative;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  overflow: hidden;
+  transition: 0.5s;
+  transform: translate(0px,0px);
+}
+
+.userbutton{
+  width: 100%;
+  transition: all linear 0.2s;
+  transform: rotate(0deg);
+  
+}
+img.hover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: rotate(0deg);
+}
+
+.navbar-brand:hover{
+  position: relative;
+  transition: 0.3s;
+  transform: translate(0px, -3px);
+ 
+}
+.navbar-brand:hover .userbutton{
+ /* position: relative;
+  transition: 0.5s;
+  transform: translate(0px, -5px);*/
+  opacity: 0;
+  transform: rotate(360deg);
+}
+.navbar-brand:hover img.hover{
+/*  position: relative;
+  transition: 0.5s;
+  transform: translate(0px, -5px);*/
+  opacity: 1;
+  transform: rotate(360deg);
+}
+
+.nav-link{
+  position: relative;
+  color: white;
+}
+
+.nav-link:hover{
+  color: white;
+  transition: all 0.3s;
+  transform: translate(0px, -5px);
+  text-shadow: 0px 5px 4px black;
+}
+.nav-link:active,
+.navbar-brand:active{
+  transform: translate(0px, 2px);
+  text-shadow: none;
+  transition: all 0.1s;
+}
+
+
+.aboutphoto{
+
+  width: auto;
+  height: 50%;
+   box-shadow: 0px 10px 10px rgba(0,0,0,0.7);
+
 }
 #landing{
 	background-image: 
@@ -27,14 +96,38 @@ body{
 
 }
 
-.userbutton{
-	box-shadow: 0px 10px 10px rgba(0,0,0,0.3);
+#about{
+  background-image: url(images/about_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.3);
+  
+}
+
+#resumebtn{
+  background: none;
+  border-width: 2px;
+}
+
+#resumebtn:hover {
+  background-color: #F8BD08;
+
 }
 
 
 
+.navbar-brand{
+	-webkit-filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.7));
+filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.7));
+}
+
 p{
 	font-family: 'Merriweather Sans', sans-serif;
+}
+
+#my-projects, #contact{
+  background-color: #072039;
 }
 
 #projects{
@@ -51,9 +144,45 @@ p{
 }
 
 #tools-title{
-	background-color: #7F9BB9;
-	box-shadow: 0px 10px 10px rgba(0,0,0,0.3);
+	 background-image: url(images/tools-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.3);
+  
 }
+
+.tools{
+  background-color: #7F9BB9 ;
+}
+.webdev-tools{
+  height: 127px;
+
+}
+
+.web-tools{
+  height: 85px;
+  width: 95px;
+  overflow: hidden;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+  background-color: none;
+  background-size: 85px 85px;
+  border-radius: 42.5px;
+  
+}
+.web-tools:hover{
+  height: 100%;
+  width: 95px;
+  background-color: #7F9BB9 ;
+  border-radius: 10px;
+  background-size: auto;
+ 
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.7);
+  
+  
+}
+
 
 #gmap_canvas {
 	height: 88vh;
@@ -118,27 +247,20 @@ a{
   background: #1DA1F2;
   }
 }
+
 @media (hover: hover){
   .wrapper .button:nth-child(3):hover .icon{
-  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,
-  #dc2743 50%,#cc2366 75%,#bc1888 100%);
-    }
-}
-@media (hover: hover){
-  .wrapper .button:nth-child(4):hover .icon{
   background: #333;
     }
 }
-@media (hover: hover){
-  .wrapper .button:nth-child(5):hover .icon{
-  background: #ff0000;
-    }
-}
+
+
 .wrapper .button .icon i{
   font-size: 25px;
   line-height: 60px;
   transition: all 0.3s ease-out;
   color:#000
+  justify
 
 }
 @media (hover: hover){
@@ -160,12 +282,8 @@ a{
 .wrapper .button:nth-child(2) span{
   color: #1DA1F2;
 }
+
 .wrapper .button:nth-child(3) span{
-  color: #E1306C;
-}
-.wrapper .button:nth-child(4) span{
   color: #333;
 }
-.wrapper .button:nth-child(5) span{
-  color: #ff0000;
-}
+
